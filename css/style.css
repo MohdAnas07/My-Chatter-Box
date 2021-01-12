@@ -1,0 +1,206 @@
+body{
+    padding: 0;
+    margin: 0;
+    /* background-image:  linear-gradient(white,rgb(255, 118, 63)); */
+    background-color:rgb(68, 200, 251);
+}
+
+.nav{
+    background-color:#bae8ff;
+    display:flex;
+    /* justify-content: center; */
+}
+
+.navTopic{
+    display:block;
+    margin: auto;
+}
+
+.logo img{
+    display: block;
+    margin:auto;
+    width:50px;
+    height: 50px;
+    text-align: center;
+}
+.nav h2{
+    text-align: center;
+    margin:0px;
+    margin-bottom: 2px;
+    font-family: 'Langar', cursive;
+}
+
+.deleteLogo{
+    width: 104px;
+    text-align: center;
+    border-left: 2px solid;
+    cursor: pointer;
+    background-color: black;
+}
+
+.deleteLogo img{
+    width: 26px;
+    height: 29px;
+    padding-top: 20px;  
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    transition-property: all .7s;
+    transition-duration:.7s;
+}
+
+.deleteLogo img:hover{
+    transform: scale(1.2);
+}
+
+.deleteLogo h4{
+    color: white;
+    padding:0px;
+    margin:0px;
+    font-weight: bold;
+}
+
+.container{
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 0px 0px 7px 7px;
+    max-width:82vw;
+    height: 71vh;
+    margin:auto;
+    padding:10px;
+    overflow:auto;
+    /* margin-bottom:23px; */
+    font-family: 'Patua One', cursive;
+    overflow-y:visible;
+}
+
+.message{
+    /* background-color:#d0caca; */
+    max-width:35%;
+    margin:5px 4px;
+    padding:10px;
+    /* border:1px solid black; */
+    /* border-radius: 6px; */
+    font-size: 18px;
+
+}
+
+
+.left{
+    background-color: rgb(255, 97, 35) ;
+    float: left;
+    clear: both;
+    display: block;
+    color:black;
+    border-radius: 11px 11px 11px 0px;
+}
+
+.right{
+    background-color:rgb(221, 221, 221); 
+    float: right;
+    clear: both;
+    display: block;
+    border-radius: 11px 11px 0px 11px;
+
+}
+
+#send-containt{
+    text-align: center;
+    margin:20px;
+    margin-top:5px;
+    font-size:20px;
+
+}
+
+#send-containt img{
+    width: 31px;
+    height: 22px;
+    cursor: pointer;
+}
+
+#send-containt input{
+    padding: 10px;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    outline:none;
+}
+
+.send{
+    /* display:flex;
+    justify-content: center; */
+}
+
+.btn-send{
+    outline: none;
+    padding: 4px 2px 8px 2px;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 10%;
+    font-size: 18px;
+    font-weight: bold;
+    background-color:#f35000;
+    color: white;
+    box-shadow: 3px 4px 13px rgb(71, 69, 69);
+    transition-property: all 1s;
+    transition-duration:.3s;
+    cursor: pointer;
+}
+
+.btn-send:hover{
+    /* background-color:#1b7a01; */
+    box-shadow:0 0 0 ;
+}
+
+/* Side NavBar ------------------ */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+span{
+    font-size: 30px;
+    cursor: pointer;
+    width: 103px;
+    border-right: 2px solid black;
+    background-color: black;
+    color: white;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+ 
+.sidenav a:hover {
+    color: #f1f1f1;
+    background-color:rgb(26, 26, 26);
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
